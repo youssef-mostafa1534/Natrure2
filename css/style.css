@@ -1,0 +1,476 @@
+::selection {
+    background-color: #1eff44;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #6a6a6a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1eff44;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00a11b;
+}
+
+html,
+body {
+    position: relative;
+    height: 98%;
+    width: 98%;
+}
+
+body {
+    font-family: "Tajawal";
+    font-size: 30px;
+    background-image: url("../images/greenBeetle.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: rgb(0, 0, 0);
+    overflow-y: scroll;
+    direction: rtl;
+}
+
+header {
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 25px;
+    text-align: center;
+    background: linear-gradient(to right, rgba(30, 144, 255, 0.7), rgba(30, 255, 68, 0.7));
+    backdrop-filter: blur(5px);
+    font-size: 4rem;
+    font-style: italic;
+    z-index: 2;
+    border-radius: 60px 60px 0 60px;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ol {
+    font-size: 20px;
+}
+
+.fa-earth-americas {
+    border-radius: 50%;
+    background: rgb(0, 225, 100);
+    color: dodgerblue;
+    animation: rotate 2s linear infinite;
+    transition: all 0.3s;
+}
+
+.fa-earth-americas:hover {
+    box-shadow: 0 0 20px 10px #fff;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+}
+
+.parallax-bg {
+    position: absolute;
+    left: -31%;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.paragraph.main {
+    text-align: center;
+    background: linear-gradient(to right, rgba(236, 255, 30, 0.6), rgba(30, 255, 68, 0.6));
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(79, 79, 79, 0.3)); */
+    border-radius: 20px;
+    box-shadow: 0 0 50px 10px lime;
+    backdrop-filter: blur(7px);
+    transition: box-shadow 0.2s;
+}
+
+.paragraph {
+    text-align: center;
+    background: linear-gradient(to right, rgba(74, 74, 74, 0.6), rgba(47, 42, 42, 0.7));
+    /* background: linear-gradient(to right, rgba(236, 255, 30, 0.6), rgba(30, 255, 68, 0.6)); */
+    color: #fff;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+    transition: box-shadow 0.2s;
+}
+
+.ill {
+    border-radius: 20px;
+    border: 5px solid #000;
+}
+
+.swiper-slide .title {
+    font-size: 200%;
+    font-weight: 200;
+}
+
+.swiper-slide .subtitle {
+    font-size: 150%;
+}
+
+.swiper-slide .text {
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+.swiper-pagination-bullet {
+    background: linear-gradient(to bottom left, #1eff44, dodgerblue);
+    width: 40px;
+    height: 40px;
+}
+
+.swiper-pagination-bullet:hover {
+    transform: rotate(180deg);
+}
+
+.wave {
+    position: relative;
+}
+
+.wave a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    animation: jump 3s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+    margin: 25px;
+    margin-top: 0;
+    position: sticky;
+    top: 0%;
+    width: 100%;
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 0 30px 30px;
+    transition: all 0.2s;
+}
+
+.dropbtn:hover {
+    background-color: #286187;
+}
+
+.dropbtn:active {
+    background-color: #19262f;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+    z-index: 4;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: larger;
+    transition: all 200ms;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #5be369;
+    color: #fff;
+}
+
+.show {
+    display: block;
+}
+
+a.external {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    padding: 10px;
+    margin: 10px;
+    border: 10px solid #fff;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+a.external:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border: 10px solid #000;
+}
+
+a.external:active, a.external:focus {
+    color: black;
+    background-color: rgba(0, 255, 0, 0.6);
+    padding: 20px;
+    border: 10px solid #000;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 26%;
+    height: 70%;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    border-radius: 30px;
+    font-size: 23px;
+    perspective: 1800px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s, box-shadow 1s;
+    transform-style: preserve-3d;
+    border-radius: 30px;
+}
+
+.flip-card:hover .flip-card-inner {
+    box-shadow: 0 0 20px 20px #2cdb3d;
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    border-radius: 30px;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card .flip-card-back {
+    background: linear-gradient(to top, rgb(56, 205, 56), #51ff6e);
+    /* background: linear-gradient(to top, rgb(150, 30, 255), rgb(213, 165, 255)); */
+    color: black;
+    transform: rotateY(-180deg);
+}
+
+.icons {
+    margin: 0;
+}
+
+#y {
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, red, orange);
+    padding: 10px;
+}
+
+#g {
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #272727, rgb(218, 0, 218));
+    padding: 10px;
+}
+
+#f {
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, blue, cyan);
+    padding: 10px;
+}
+
+#i {
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, magenta, yellow);
+    padding: 10px;
+}
+
+#it {
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, rgb(219, 34, 34), rgb(255, 144, 162));
+    padding: 10px;
+}
+
+#t {
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, rgb(195, 65, 255), rgb(255, 93, 217));
+    padding: 10px;
+}
+
+#d {
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, rgb(120, 36, 255), #272727);
+    padding: 10px;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(-35px);
+    }
+
+    40%,
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 790px) {
+    body {
+        font-size: 25px;
+    }
+
+    .swiper-slide .title {
+        font-size: 35px;
+    }
+
+    .swiper-slide .subtitle {
+        font-size: 27px;
+    }
+
+    .swiper-slide .text {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 580px) {
+    body {
+        font-size: 15px;
+    }
+
+    .swiper-slide .title {
+        font-size: 30px;
+    }
+
+    .swiper-slide .subtitle {
+        font-size: 20px;
+    }
+
+    .swiper-slide .text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        font-size: 10px;
+    }
+
+    .swiper-slide .title {
+        font-size: 25px;
+    }
+
+    .swiper-slide .subtitle {
+        font-size: 17px;
+    }
+
+    .swiper-slide .text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 335px) {
+    body {
+        font-size: 10px;
+    }
+
+    .swiper-slide .title {
+        font-size: 17px;
+    }
+
+    .swiper-slide .subtitle {
+        font-size: 15px;
+    }
+
+    .swiper-slide .text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 675px) {
+    .flip-card {
+        width: 36%;
+        height: 60%;
+        left: 30%;
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 600px) {
+    .flip-card {
+        width: 43%;
+        height: 50%;
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 400px) {
+    .flip-card {
+        width: 48%;
+        height: 40%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 325px) {
+    .flip-card {
+        width: 50%;
+        height: 30%;
+        font-size: 12px;
+    }
+}
